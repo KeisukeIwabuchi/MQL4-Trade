@@ -17,7 +17,18 @@ Easy ordering process for MQL4
 This module has four functions.
 
 ### Entry
-Open market or place a pending order.
+Open market or place a pending order.  
+To use this function, pass the **OrderSendRequest** structure.  
+OrderSendRequest is a structure that summarizes the parameters required for ordering.  
+
+Price specification method is distinctive.  
+The price parameter is specified in the TradePrice structure.  
+The TradePrice structure is specified by the ORDER_PRICE enumeration type and double value.  
+The ORDER_PRICE enumeration type has three types of values.  
+DYNAMIC_PRICE, DYNAMIC_PIPS and STATIC_PRICE.
+If DYNAMIC_PRICE is specified, Ask or Bid will be used for the order price.
+If DYNAMIC_PIPS is specified, the order price is used at the price value [pips] is added to the current price.
+If STATIC_PRICE is specified, value will be used as is for the order price.
 
 ### Exit
 Closes opened order.
