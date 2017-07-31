@@ -32,9 +32,12 @@ If STATIC_PRICE is specified, value will be used as is for the order price.
 
 ### Exit
 Closes opened order.
+To use this function, pass the **OrderCloseRequest** structure.
 
 ### Modify
 Modification of characteristics of the previously opened or pending orders.
+To use this function, pass the **OrderModifyRequest** structure.
 
 ### Delete
 Deletes previously opned pending order.
+To use this function, pass the **OrderDeleteRequest** structure.
