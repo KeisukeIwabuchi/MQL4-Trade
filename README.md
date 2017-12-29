@@ -10,7 +10,7 @@ Easy ordering process for MQL4
 
 ## Install
 1. Download 4 files from Github. (Trade.mqh, defines.mqh, enums.mqh, structs.mqh)
-2. Save the file to /MQL4/Includes/mql4_modules/Trade/
+2. Save the file to /MQL4/Include/mql4_modules/Trade/
 
 
 ## Usage
